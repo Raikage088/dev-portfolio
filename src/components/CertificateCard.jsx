@@ -7,7 +7,7 @@ export const CertificateCard = ({ album, onClick }) => {
   return (
     <div
       onClick={onClick}
-      className="relative cursor-pointer rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+      className="relative cursor-pointer rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 hover:z-100"
     >
       <img
         src={thumbnail}

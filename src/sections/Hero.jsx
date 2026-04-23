@@ -8,7 +8,7 @@ import { LinkedInIcon } from "@/components/LinkedInIcon";
 import { FacebookIcon } from "@/components/FacebookIcon";
 import { Button } from "@/components/Button";
 import { DownloadIcon } from "@/components/DownloadIcon";
-import { ArrowIcon } from "./../components/ArrowIcon";
+import { ArrowIcon } from "@/components/ArrowIcon";
 
 import Portfolio from "../assets/Portfolio.svg";
 
@@ -105,12 +105,28 @@ export const Hero = () => {
           </div>
           <div className="flex gap-10 lg:gap-19.5 -ml-1">
             {/* CTA */}
-            <Button className="group flex justify-center items-center text-black! bg-button-secondary shadow-2xl shadow-black  transition-transform duration-300 ease-in-out hover:scale-105 hover:text-white! active:scale-95 lg:w-65 ">
-              LET'S CONNECT
-              <span className="flex items-center justify-center ml-2">
-                <ArrowIcon className="w-3 h-auto transition-all duration-300 ease-in-out group-hover:translate-x-1 lg:w-4" />
-              </span>
-            </Button>
+            <a
+              href="#contact"
+              onClick={(e) => {
+                e.preventDefault();
+                const element = document.getElementById("contact");
+                if (element) {
+                  element.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  });
+                }
+              }}
+            >
+              {" "}
+              <Button className="group flex justify-center items-center text-black! bg-button-secondary shadow-2xl shadow-black  transition-transform duration-300 ease-in-out hover:scale-105 hover:text-white! active:scale-95 lg:w-65 ">
+                LET'S CONNECT
+                <span className="flex items-center justify-center ml-2">
+                  <ArrowIcon className="w-3 h-auto transition-all duration-300 ease-in-out group-hover:translate-x-1 lg:w-4" />
+                </span>
+              </Button>
+            </a>
+
             <a
               href="/Resume-Xyrus-Vertucio.pdf"
               download="Resume-Xyrus-Vertucio.pdf"
