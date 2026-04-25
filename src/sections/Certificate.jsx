@@ -16,7 +16,7 @@ export const Certificate = () => {
         9 certificates across multiple platforms — Verified credentials from
         Cisco Networking Academy, Udemy, EPCPS and ICpEP.
       </p>
-      <div className="grid grid-cols-3 place-items-center gap-1">
+      <div className="grid lg:grid-cols-3 place-items-center gap-2">
         {certificatesAlbum.map((album) => (
           <CertificateCard
             key={album.id}
@@ -42,14 +42,14 @@ export const Certificate = () => {
             </button>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 w-150">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 w-100">
             {selectedAlbum.certificates.map((cert) => (
               <div
                 key={cert.id}
                 className="group relative bg-white rounded-xl border border-gray-200 p-1 
            transition-all duration-500 ease-in-out 
            hover:shadow-[0_20px_50px_rgba(0,0,0,0.2)] 
-           hover:-translate-y-2 z-0 hover:z-100"
+           lg:hover:-translate-y-2 z-0 hover:z-100"
               >
                 <img
                   src={cert.image}
@@ -57,7 +57,7 @@ export const Certificate = () => {
                   className="w-full rounded-t-lg"
                 />
 
-                <div className="invisible group-hover:visible opacity-0 group-hover:opacity-100 absolute left-1/2 -translate-x-1/2 top-0 -translate-y-1/2 w-150 pointer-events-none transition-all duration-500">
+                <div className="hidden md:block md:invisible md:opacity-0 md:group-hover:visible md:group-hover:opacity-100 absolute left-1/2 -translate-x-1/2 top-0 -translate-y-1/2 w-150 pointer-events-none transition-all duration-500">
                   <img
                     src={cert.image}
                     className="rounded-lg shadow-2xl border-4 border-white"
