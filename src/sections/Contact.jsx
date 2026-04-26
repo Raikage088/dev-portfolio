@@ -94,7 +94,7 @@ export const Contact = () => {
         onSubmit={handleSubmit}
         className="flex flex-col gap-8 w-full items-center"
       >
-        <div className="flex flex-col gap-4 w-100 max-w-lg lg:w-150">
+        <div className="flex flex-col gap-4 w-80 max-w-lg lg:w-150">
           <div>
             <label
               htmlFor="name"
