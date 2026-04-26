@@ -89,7 +89,7 @@ export const Contact = () => {
       setSubmitStatus({
         type: "error",
         message: "Failed to send message.",
-        error: error.message.stack,
+        error: error.stack,
       });
     } finally {
       setIsLoading(false);
@@ -105,7 +105,7 @@ export const Contact = () => {
           <span className="text-font-color-secondary">Send</span> a Message
         </h1>
         <p className="text-gray-500 text-lg">
-          I have love to hear from you , if you have any question,comments or
+          I have love to hear from you , if you have any question, comments or
           feedback please use the form below.
         </p>
       </div>
@@ -143,7 +143,7 @@ export const Contact = () => {
             </label>
             <input
               id="email"
-              type="text"
+              type="email"
               required
               name="email"
               value={formData.email}
