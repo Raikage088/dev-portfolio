@@ -2,6 +2,8 @@
 
 Welcome to my portfolio repository! This space showcases my projects, technical skills, and the work I've done as a **Aspiring Software Engineer and a Graduate Student**.
 
+![Alt text](/src/assets/profile.png)
+
 📍 **Based in:** Philippines  
 💼 **Currently:** Student / Open to Work  
 🎯 **Open to:** Full-time roles / Freelance / Open Source / Collaborations
