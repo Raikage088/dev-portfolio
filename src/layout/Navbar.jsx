@@ -142,7 +142,7 @@ export const Navbar = () => {
                 onClick={() => handleNavClick(link.href)}
                 className={`block px-4 py-3 rounded-lg text-base font-semibold transition-all duration-200 ${
                   isActive
-                    ? "bg-foreground text-background"
+                    ? "bg-foreground text-black"
                     : "text-font-color-primary hover:bg-muted hover:text-font-color-secondary"
                 }`}
               >
