@@ -10,26 +10,7 @@ import {
 import { Button } from "@/components/Button";
 import emailjs from "@emailjs/browser";
 
-const contactInfo = [
-  {
-    icon: Mail,
-    label: "Email",
-    value: "xyrsjhn@gmail.com",
-    href: "mailto:xyrsjhn@gmail.com",
-  },
-  {
-    icon: Phone,
-    label: "Phone",
-    value: "090900909090",
-    href: "tel:09090090909",
-  },
-  {
-    icon: MapPin,
-    label: "Location",
-    value: "Manila, Philippines",
-    href: "https://www.google.com/maps/place/",
-  },
-];
+import { Footer } from "@/components/Footer";
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -208,6 +189,7 @@ export const Contact = () => {
           </div>
         )}
       </form>
+      <Footer />
     </section>
   );
 };
