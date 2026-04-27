@@ -1,8 +1,15 @@
-import React from "react";
-import { ExternalLink } from "lucide-react";
+import { useState } from "react";
+import { ExternalLink, ChevronUp } from "lucide-react";
 import { GithubIcon } from "@/components/GithubIcon";
 
 export const ProjectCard = ({ project }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const MAX_TECH_VALUE = 3;
+  const techs = project.technologies || [];
+  const visibleTechs = techs.slice(0, MAX_TECH_VALUE);
+  const hiddenTechs = techs.slice(MAX_TECH_VALUE);
+
   return (
     <div className="group flex flex-col bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg hover:scale-105 transition-all duration-300 max-w-sm mx-auto">
       {/* Project Image - Placeholder */}
@@ -25,15 +32,41 @@ export const ProjectCard = ({ project }) => {
           {project.description}
         </p>
         {/* Technologies - Placeholder */}
-        <div className="flex flex-wrap justify-center gap-2 mt-2">
-          {project.technologies.map((tech, index) => (
+        <div className="flex flex-wrap justify-center gap-4 mt-2">
+          {visibleTechs.map((tech, index) => (
             <span
-              key={index}
+              key={`visible-${tech}-${index}`}
               className="flex items-center justify-center px-3 py-2 font-bold bg-gray-100 text-gray-700 text-xs rounded-lg"
             >
               {tech}
             </span>
           ))}
+          {hiddenTechs.length > 0 && !isExpanded && (
+            <button
+              onClick={() => setIsExpanded(true)}
+              className="flex items-center justify-center py-2 font-bold text-gray-500 text-xs hover:text-gray-700 transition-colors"
+            >
+              +{hiddenTechs.length} more
+            </button>
+          )}
+          {isExpanded &&
+            hiddenTechs.map((tech, index) => (
+              <span
+                key={`hidden-${tech}-${index}`}
+                className="flex items-center justify-center px-3 py-2 font-bold bg-gray-100 text-gray-700 text-xs rounded-lg"
+              >
+                {tech}
+              </span>
+            ))}
+
+          {isExpanded && (
+            <button
+              onClick={() => setIsExpanded(false)}
+              className="flex items-center justify-center py-2 font-bold text-gray-500 text-xs hover:text-gray-700 transition-colors"
+            >
+              <ChevronUp size={10} />
+            </button>
+          )}
         </div>
         {/* Action Buttons - Placeholder */}
         <div className="flex justify-center gap-3 mt-auto pt-4">
