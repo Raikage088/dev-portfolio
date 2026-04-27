@@ -62,7 +62,7 @@ export const Hero = () => {
       {/* LEFT SIDE */}
       <div className="grid grid-cols-1 gap-10 w-full min-w-0">
         {/* Headline */}
-        <div className="flex flex-col items-center gap-6 w-full max-w-150 min-w-80 mx-auto lg:items-start lg:mx-0 order-2 lg:order-1">
+        <div className="flex flex-col items-center gap-6 w-full max-w-160 min-w-80 mx-auto lg:items-start lg:mx-0 order-2 lg:order-1">
           <h1 className="font-bold text-2xl sm:text-3xl lg:text-5xl leading-tight lg:leading-normal">
             Hi,{" "}
             <span className="inline lg:inline">
@@ -77,7 +77,7 @@ export const Hero = () => {
                 ]}
                 wrapper="span"
                 speed={50}
-                className="font-bold text-3xl lg:text-5xl"
+                className="font-bold text-2xl sm:text-3xl lg:text-5xl leading-tight lg:leading-normal"
                 repeat={Infinity}
               />
             </span>
