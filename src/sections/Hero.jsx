@@ -57,15 +57,15 @@ export const Hero = () => {
   return (
     <section
       id="hero"
-      className="min-h-screen grid grid-cols-1 gap-10 items-center px-6 py-20 lg:grid-cols-2 lg:px-20"
+      className="min-h-screen grid grid-cols-1 gap-10 items-center px-6 py-20 lg:grid-cols-2 lg:px-20 overflow-x-hidden w-full"
     >
       {/* LEFT SIDE */}
-      <div className="grid grid-cols-1 gap-10 w-full">
+      <div className="grid grid-cols-1 gap-10 w-full min-w-0">
         {/* Headline */}
         <div className="flex flex-col items-center gap-6 w-full max-w-150 min-w-80 mx-auto lg:items-start lg:mx-0 order-2 lg:order-1">
-          <h1 className="font-bold text-3xl lg:text-5xl">
+          <h1 className="font-bold text-2xl sm:text-3xl lg:text-5xl leading-tight lg:leading-normal">
             Hi,{" "}
-            <span className="lg:inline">
+            <span className="inline lg:inline">
               <TypeAnimation
                 sequence={[
                   "I'm Xyrus.",
@@ -82,7 +82,7 @@ export const Hero = () => {
               />
             </span>
           </h1>
-          <p className="text-[16px] lg:text-3xl text-font-color-secondary text-justify hyphens-auto leading-snug">
+          <p className="text-[16px] lg:text-3xl text-font-color-secondary text-justify hyphens-auto leading-snug break-words overflow-hidden w-full px-2">
             I am a <span className="font-bold">Computer Engineering</span>{" "}
             undergraduate and aspiring
             <span className="font-bold"> Software Engineer</span> dedicated to
@@ -103,7 +103,7 @@ export const Hero = () => {
               </a>
             ))}
           </div>
-          <div className="flex gap-10 lg:gap-19.5 -ml-1">
+          <div className="flex flex-col gap-4 items-stretch w-full max-w-md mx-auto lg:max-w-none lg:flex-row lg:gap-19.5">
             {/* CTA */}
             <a
               href="#contact"
@@ -119,7 +119,7 @@ export const Hero = () => {
               }}
             >
               {" "}
-              <Button className="group flex justify-center items-center text-black! bg-button-secondary shadow-2xl shadow-black  transition-transform duration-300 ease-in-out hover:scale-105 hover:text-white! active:scale-95 lg:w-65 ">
+              <Button className="group flex justify-center items-center text-black! bg-button-secondary shadow-2xl shadow-black transition-transform duration-300 ease-in-out hover:scale-105 hover:text-white! active:scale-95 w-full">
                 LET'S CONNECT
                 <span className="flex items-center justify-center ml-2">
                   <ArrowIcon className="w-3 h-auto transition-all duration-300 ease-in-out group-hover:translate-x-1 lg:w-4" />
@@ -134,7 +134,7 @@ export const Hero = () => {
               rel="noopener noreferrer"
               className="contents"
             >
-              <Button className="group flex justify-center items-center bg-button-primary shadow-2xl shadow-black transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-button-secondary! hover:text-black! active:scale-95 lg:w-65">
+              <Button className="group flex justify-center items-center bg-button-primary shadow-2xl shadow-black transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-button-secondary! hover:text-black! active:scale-95 w-full sm:w-65">
                 GET RESUME
                 <span className="flex items-center justify-center ml-2">
                   <DownloadIcon className="inline-block w-3 h-auto transition-all duration-300 ease-in-out group-hover:translate-y-0.5 lg:w-4" />
@@ -162,17 +162,17 @@ export const Hero = () => {
             transformStyle: "preserve-3d",
           }}
           // Compacted padding (p-8 to p-7) and slightly narrower max-w (max-w-xl to max-w-lg)
-          className="w-full max-w-lg bg-white border border-gray-200 rounded-3xl shadow-2xl p-7 font-mono pointer-events-none relative z-10 origin-center"
+          className="w-full max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-3xl shadow-2xl p-6 lg:p-7 font-mono pointer-events-none relative z-10 origin-center overflow-hidden max-h-[70vh] lg:max-h-[80vh]"
         >
           {/* Header: Exact replica of the macOS style buttons */}
           <div
             style={{ transform: "translateZ(15px)" }}
-            className="flex items-center gap-2.5 mb-6"
+            className="flex items-center gap-2.5 mb-4 lg:mb-6"
           >
             <div className="w-3 h-3 rounded-full bg-[#FF5F56]" />
             <div className="w-3 h-3 rounded-full bg-[#FFBD2E]" />
             <div className="w-3 h-3 rounded-full bg-[#27C93F]" />
-            <span className="ml-auto text-gray-400 text-[11px] font-medium opacity-60">
+            <span className="ml-auto text-gray-400 text-[11px] font-medium opacity-60 truncate">
               Portfolio.jsx
             </span>
           </div>
@@ -180,7 +180,7 @@ export const Hero = () => {
           {/* CODE CONTENT: Tightened leading and gaps */}
           <div
             style={{ transform: "translateZ(15px)" }}
-            className="text-[14px] leading-normal text-[#24292e] font-medium tracking-tight"
+            className="text-[11px] sm:text-[13px] lg:text-[14px] leading-tight lg:leading-normal text-[#24292e] font-medium tracking-tight overflow-auto max-h-[55vh] lg:max-h-[65vh] scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent"
           >
             <div className="flex gap-5">
               <span className="text-gray-300 w-5 text-right select-none">
