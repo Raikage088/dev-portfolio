@@ -47,7 +47,7 @@ I'm always open to connecting, discussing new opportunities, or collaborating on
 - 📧 **Email:** [xyrsjhn@gmail.com](mailto:xyrsjhn@gmail.com)
 - 💼 **LinkedIn:** [linkedin.com/in/Xyrus](https://www.linkedin.com/in/xyrus-john-p-vertucio-141358392/)
 - 🐙 **GitHub:** [github.com/Raikage088/](https://github.com/Raikage088)
-- 🌐 **Live Portfolio:** [myportfolio.com](https://placeholder.com)
+- 🌐 **Live Portfolio:** [myportfolio.com](https://dev-portfolio-phi-indol.vercel.app/#hero)
 
 
 ## 🛠️ Running This Portfolio Locally *(Placeholder for now)*
