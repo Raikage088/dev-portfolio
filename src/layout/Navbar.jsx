@@ -15,12 +15,11 @@ export const Navbar = () => {
   ];
 
   const [currentSection, setCurrentSection] = useState("#hero");
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // 👈 Mobile menu state
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   // Close mobile menu when clicking a link
   const handleNavClick = (href) => {
     setIsMobileMenuOpen(false);
-    // Optional: smooth scroll behavior is handled by CSS or you can add it here
   };
 
   useEffect(() => {

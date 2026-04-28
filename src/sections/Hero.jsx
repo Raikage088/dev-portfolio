@@ -20,7 +20,7 @@ export const Hero = () => {
       label: "Github",
     },
     {
-      href: "https://www.linkedin.com/in/xyrus-john-p-vertucio-141358392/",
+      href: "https://www.linkedin.com/in/xyrusvertucio/",
       icon: <LinkedInIcon className="w-7 h-auto" />,
       label: "Linked In",
     },
