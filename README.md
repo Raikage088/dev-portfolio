@@ -2,8 +2,9 @@
 
 > Aspiring Software Engineer & Graduate Student based in the Philippines, building full-stack web and mobile experiences.
 
+![Alt text](/src/assets/profile.png)
 [![Portfolio](https://img.shields.io/badge/🌐_Live_Portfolio-Visit-blueviolet?style=for-the-badge)](https://dev-portfolio-phi-indol.vercel.app/#hero)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?logo=linkedin&logoColor=white&style=for-the-badge)](https://www.linkedin.com/in/cyrusvertucio)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?logo=linkedin&logoColor=white&style=for-the-badge)](https://www.linkedin.com/in/xyrusvertucio/)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?logo=github&logoColor=white&style=for-the-badge)](https://github.com/Raikage088)
 
 ---
