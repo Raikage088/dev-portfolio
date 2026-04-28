@@ -1,12 +1,22 @@
-# 🚀 Xyrus John P. Vertucio - Portfolio Website
+# 🚀 Xyrus John P. Vertucio — Portfolio Website
 
-Welcome to my portfolio repository! This space showcases my projects, technical skills, and the work I've done as a **Aspiring Software Engineer and a Graduate Student**.
+> Aspiring Software Engineer & Graduate Student based in the Philippines, building full-stack web and mobile experiences.
 
-![Alt text](/src/assets/profile.png)
+[![Portfolio](https://img.shields.io/badge/🌐_Live_Portfolio-Visit-blueviolet?style=for-the-badge)](https://dev-portfolio-phi-indol.vercel.app/#hero)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?logo=linkedin&logoColor=white&style=for-the-badge)](https://www.linkedin.com/in/cyrusvertucio)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?logo=github&logoColor=white&style=for-the-badge)](https://github.com/Raikage088)
+
+---
+
+## 👋 About Me
+
+Hi! I'm **Xyrus John**, a software engineering student from the Philippines passionate about building clean, functional, and impactful software. This repository houses the source code for my personal portfolio website.
 
 📍 **Based in:** Philippines  
-💼 **Currently:** Student / Open to Work  
-🎯 **Open to:** Full-time roles / Freelance / Open Source / Collaborations
+💼 **Status:** Student · Open to Work  
+🎯 **Available for:** Full-time Roles · Freelance · Open Source · Collaborations
+
+---
 
 ## 🛠️ Tech Stack & Skills
 
@@ -38,22 +48,61 @@ Welcome to my portfolio repository! This space showcases my projects, technical 
 ![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white&style=for-the-badge)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white&style=for-the-badge)
 ![GitHub Actions](https://img.shields.io/badge/CI/CD-2088FF?logo=githubactions&logoColor=white&style=for-the-badge)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white&style=for-the-badge)  
+![Figma](https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white&style=for-the-badge)
 
+---
+
+## 🚀 Running This Project Locally
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/Raikage088/dev-portfolio.git
+
+# 2. Navigate into the project folder
+cd dev-portfolio
+
+# 3. Install dependencies
+npm install
+
+# 4. Start the development server
+npm run dev
+```
+
+> Runs on `http://localhost:5173` by default (Vite) or as configured.
+
+---
+
+## 📂 Project Structure
+
+```
+dev-portfolio/
+├── src/
+│   ├── assets/         # Images, icons, and static files
+│   ├── components/     # Reusable UI components
+│   ├── sections/          # Page-level views
+│   └── App.jsx         # Root component
+├── public/
+├── index.html
+└── package.json
+```
+
+> Update this section to reflect your actual folder structure.
+
+---
 
 ## 📫 Get In Touch
-I'm always open to connecting, discussing new opportunities, or collaborating on interesting projects!
 
-- 📧 **Email:** [xyrsjhn@gmail.com](mailto:xyrsjhn@gmail.com)
-- 💼 **LinkedIn:** [linkedin.com/in/Xyrus](https://www.linkedin.com/in/xyrus-john-p-vertucio-141358392/)
-- 🐙 **GitHub:** [github.com/Raikage088/](https://github.com/Raikage088)
-- 🌐 **Live Portfolio:** [myportfolio.com](https://dev-portfolio-phi-indol.vercel.app/#hero)
+I'm always open to new opportunities, collaborations, or just a friendly chat about tech!
 
+| Platform | Link |
+|----------|------|
+| 📧 Email | [xyrsjhn@gmail.com](mailto:xyrsjhn@gmail.com) |
+| 💼 LinkedIn | [linkedin.com/in/cyrusvertucio](https://www.linkedin.com/in/cyrusvertucio) |
+| 🐙 GitHub | [github.com/Raikage088](https://github.com/Raikage088) |
+| 🌐 Portfolio | [dev-portfolio-phi-indol.vercel.app](https://dev-portfolio-phi-indol.vercel.app/#hero) |
 
-## 🛠️ Running This Portfolio Locally *(Placeholder for now)*
-If this repository contains the source code for a live portfolio site:
-```bash
-git clone https://github.com/[your-username]/portfolio.git
-cd portfolio
-npm install          # or pip install -r requirements.txt / yarn / bundle install
-npm run dev          # or your framework's start command
+---
+
+<p align="center">
+  Made with ❤️ by Xyrus John P. Vertucio · Philippines
+</p>
