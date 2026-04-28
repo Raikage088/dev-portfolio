@@ -100,7 +100,7 @@ I'm always open to new opportunities, collaborations, or just a friendly chat ab
 | 📧 Email | [xyrsjhn@gmail.com](mailto:xyrsjhn@gmail.com) |
 | 💼 LinkedIn | [linkedin.com/in/xyrusvertucio](https://www.linkedin.com/in/xyrusvertucio/) |
 | 🐙 GitHub | [github.com/Raikage088](https://github.com/Raikage088) |
-| 🌐 Portfolio | [dev-portfolio-phi-indol.vercel.app](https://dev-portfolio-phi-indol.vercel.app/#hero) |
+| 🌐 Portfolio | [dev-xyrus-portfolio.vercel.app](https://dev-xyrus-portfolio.vercel.app/#hero) |
 
 ---
 
