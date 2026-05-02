@@ -15,7 +15,7 @@ import Portfolio from "../assets/Portfolio.svg";
 export const Hero = () => {
   const socialLinks = [
     {
-      href: "https://github.com/Raikage088",
+      href: "https://github.com/XyrusJohn",
       icon: <GithubIcon className="w-7 h-auto" />,
       label: "Github",
     },
